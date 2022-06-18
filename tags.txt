@@ -84,3 +84,10 @@ git tag v2.0.0
 
 git push origin --tags \\ закинуть все tags
 
+=============================================
+
+git tag --list
+
+git push --tags
+
+git push --delete origin v1.0.1
