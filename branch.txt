@@ -1,0 +1,67 @@
+Master --> Version1 Version2 Veriosn3 (Version4) \\ после слияния fix_error
+|
+fix_error --> Version1 Version2 Veriosn3 Version4 \\ запрос merge в Master
+
+add_link  ...
+
+============================================================================
+
+git branch # список веток
+
+git log
+
+git branch fix_error
+
+git branch
+
+git checkout fix_error
+
+git checkout Master
+
+git branch -d fix_error
+
+git checkout -b fix_error
+
+echo "Ver4" > index.html
+git add .
+git commit
+ 
+git log
+
+git checkout Master
+
+cat index.html
+
+// для соединения 4-й версии файла из ветки fix_error в Master
+
+git merge fix_error
+
+git log
+
+git branch -d fix_error // после слияния можно удалить ветку
+
+================================================================
+
+git checkout -b test
+
+echo "test" > index.html
+git add .
+git commit -m "updated index.html"
+
+Если ветка признана неудачна и не нужно вливать изменения:
+
+git checkout Master
+
+git branch -d test // git branch -D test //удалит ветку с коммитом
+
+=================================================================
+
+ветка ушла на 2 коммита вперед от Master
+
+git checkout Master
+
+git merge new_branch
+
+git branch -d new_branch
+
+git log
