@@ -1,0 +1,29 @@
+git log
+
+хэш-номер коммита
+
+git checkout hash \\ временный возврат на старый коммит
+
+git log \\ head смотрит на старый файл
+
+git checkout Master \\ head вернулся к последнему коммиту
+
+echo "Vers 5.1" > index.html
+
+git commit --amend \\ изменили файл без нового коммита
+
+new 5.1 version
+
+git log
+
+========= Полный откат ===============================
+
+git reset --hard HEAD~ \\ Откатиться на 1 коммит
+
+git reset --hard HEAD~2 \\  Откатиться на 2 коммит
+
+git log
+
+========== Удаление старых коммитов, кроме head =======
+
+git reset --soft HEAD~3
