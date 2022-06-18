@@ -1,0 +1,38 @@
+git log
+
+git log -1 // последний коммит
+
+git log -1 -p //детальный обзор последнего коммита
+
+---/dev/null
++++b/file5.txt  ---> создался новый файл
+
+---a/file4.txt
++++b/file4.txt  ---> изменения в файле
+
+=====================================================
+
+Испортил файл. Откат изменений
+git checkout --file1.txt
+cat file1.txt
+git status
+
+====================================================
+
+git diff --staged
+
+echo "ff" > newfile1.txt
+
+git add .
+
+git diff --staged  ( То что будет записано в git log, если сейчас будет git commit)
+
+=====================================================
+
+echo "sfdf" > zzz.log
+
+nano .gitignore
+*.log
+logs/
+
+
