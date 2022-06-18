@@ -1,0 +1,26 @@
+1. git clone
+
+2. git branch
+
+3. git checkout -b my_branch
+
+4. some work
+
+5. git add
+
+6. git commit
+
+7. git push --set-upstream origin my_branch
+
+8. create pull request
+
+9. merge pull request
+
+10. git checkout master
+
+11. git branch -d my_branch
+
+12. git branch
+
+13. git push origin --delete my_branch
+
