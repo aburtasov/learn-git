@@ -65,3 +65,80 @@ git merge new_branch
 git branch -d new_branch
 
 git log
+
+=================================================================
+
+git fetch # подгрузить новые ветки из удаленного репозитория
+
+git checkout new_branch  # что бы отобразилась в списках доступных веток
+
+git checkout master
+
+git merge dev  # ветка dev должна влить изменения в ветку master
+
+git log
+
+git merge new_branch
+
+git push
+
+git branch -d dev new_branch
+
+git branch
+
+git push --delete origin dev new_branch
+
+=============================================================================
+
+git checkout -b feture
+
+mkdir code
+
+touch app.go
+touch config.go
+
+git add .
+git commit
+
+git push -u origin feture
+
+git checkout master
+
+git log
+
+git checkout -b fist_feture
+
+mkdir source
+touch main.go
+
+git add .
+git commit
+
+git push -u origin fist_feture
+
+git log --oneline  # нет изменений, которые есть на feture
+
+# необходимо сместить начало ветки на тот момент, когда в мастере будет feture
+
+git checkout master
+
+git merge feture
+
+git log --oneline  # убедимся, что на мастере есть изменения от ветки feture
+
+git push # загрузим их
+
+git checkout fist_feture
+
+git status
+
+git rebase master # сместить head ветки на последний коммит в мастере, сместили текущую ветку от своей точки старта
+
+git push # ошибка, удаленная ветка fist_feture не соответствует локальной
+
+поэтому:
+
+git push --force
+
+
+
