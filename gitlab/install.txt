@@ -1,0 +1,20 @@
+можно поставить в локальной сети 
+enterprise edition
+community edition
+
+install -> local os -> or kubernetes -> or docker -> clouds providers
+
+Установка GitLab: https://about.gitlab.com/install/?ver...
+Обновление git:
+add-apt-repository -y ppa:git-core/ppa
+apt update
+apt install git -y
+Игнорирование сертификата:
+git config --global http.sslverify false
+
+root -> cat /etc/gitlab/init_root_pass
+
+menu -> admin -> users -> admin 
+for admin change password
+
+create project(or template)
