@@ -1,0 +1,14 @@
+pipline - последовательность выполнения стадий.
+Каждая стадия включает в себя набор действий(команд).Весь процесс ci/cd прописывается в piplines
+
+Инструменты: Jenkins, Travis CI, Gitlab CI ,AWS CodeBuild,
+Azure Devops, Atlassian Bitbucket Pipline
+
+Dev Srv(build,test...package) -> Staging(Test) -> Production(Monitoring)
+
+ci pipline -> build,lint,test --->next cd pipline --> deployment in Staging ---> deployment in Production
+
+deveoper -> Gitlab CI --> Staging(gitlab-runner) --> Production(gitlab-runner
+docker tag:build , docker tag:test , shell tag:stage, shell tag:prod
+
+GitLab Runner Executors -> generally docker,k8s,shell 
